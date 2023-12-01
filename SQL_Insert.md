@@ -10,9 +10,7 @@ Este script SQL insere dados na tabela `FactSales` a partir dos dados da tabela 
 2. **MAX()**: Retorna o maior valor de uma coluna. Neste caso, é utilizado para obter a chave primária correspondente com base em valores específicos nas tabelas de dimensão.
 
 ## Script Anotado
-[Referência](https://learn.microsoft.com/en-us/training/modules/load-optimize-data-into-relational-data-warehouse/6-load-fact-tables){:target="_blank"}
-
-<a href="https://learn.microsoft.com/en-us/training/modules/load-optimize-data-into-relational-data-warehouse/6-load-fact-tables" target="_blank">Referência</a>
+[Ver exemlo no LEARN.MICROSOFT](https://learn.microsoft.com/en-us/training/modules/load-optimize-data-into-relational-data-warehouse/6-load-fact-tables)
 
 ```sql
 
@@ -85,5 +83,5 @@ In the query pane, replace the existing SQL code with the following code:
  ON stg.CustomerAlternateKey = dim.CustomerAlternateKey
  AND stg.AddressLine1 <> dim.AddressLine1;
 ```
-[Referência](https://microsoftlearning.github.io/dp-203-azure-data-engineer/Instructions/Labs/09-Load-Data-into-Data-Warehouse.html){:target="_blank"}
+[Ver exemlo no LEARN.MICROSOFT](https://microsoftlearning.github.io/dp-203-azure-data-engineer/Instructions/Labs/09-Load-Data-into-Data-Warehouse.html){:target="_blank"}
 
