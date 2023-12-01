@@ -12,6 +12,8 @@ Este script SQL insere dados na tabela `FactSales` a partir dos dados da tabela 
 ## Script Anotado
 [Referência](https://learn.microsoft.com/en-us/training/modules/load-optimize-data-into-relational-data-warehouse/6-load-fact-tables){:target="_blank"}
 
+<a href="https://learn.microsoft.com/en-us/training/modules/load-optimize-data-into-relational-data-warehouse/6-load-fact-tables" target="_blank">Referência</a>
+
 ```sql
 
 
