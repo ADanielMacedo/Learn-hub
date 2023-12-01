@@ -42,7 +42,7 @@ SELECT
     SalesAmount
 FROM dbo.StageSales AS stg;
 
-```sql
+```
 
 # Combine INSERT and UPDATE statements to load a slowly changing dimension table
 
@@ -81,4 +81,4 @@ In the query pane, replace the existing SQL code with the following code:
  JOIN dbo.DimCustomer AS dim
  ON stg.CustomerAlternateKey = dim.CustomerAlternateKey
  AND stg.AddressLine1 <> dim.AddressLine1;
-```sql
+```
