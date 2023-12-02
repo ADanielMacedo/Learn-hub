@@ -82,6 +82,7 @@ In the query pane, replace the existing SQL code with the following code:
  JOIN dbo.DimCustomer AS dim
  ON stg.CustomerAlternateKey = dim.CustomerAlternateKey
  AND stg.AddressLine1 <> dim.AddressLine1;
+ 
 ```
 [Ver exemlo no LEARN.MICROSOFT](https://microsoftlearning.github.io/dp-203-azure-data-engineer/Instructions/Labs/09-Load-Data-into-Data-Warehouse.html)
 
