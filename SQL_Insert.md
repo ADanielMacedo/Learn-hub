@@ -50,7 +50,7 @@ FROM dbo.StageSales AS stg;
 ## Descrição
 The DimCustomer table supports type 1 and type 2 slowly changing dimensions (SCDs), where type 1 changes result in an in-place update to an existing row, and type 2 changes result in a new row to indicate the latest version of a particular dimension entity instance. Loading this table requires a combination of INSERT statements (to load new customers) and UPDATE statements (to apply type 1 or type 2 changes).
 
-In the query pane, replace the existing SQL code with the following code:
+Take a look in the query pane:
 
 ```sql
  INSERT INTO dbo.DimCustomer ([GeographyKey],[CustomerAlternateKey],[Title],[FirstName],[MiddleName],[LastName],[NameStyle],[BirthDate],[MaritalStatus],
