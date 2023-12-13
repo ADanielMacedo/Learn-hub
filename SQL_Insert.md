@@ -86,3 +86,31 @@ Take a look in the query pane:
 ```
 [Ver exemlo no LEARN.MICROSOFT](https://microsoftlearning.github.io/dp-203-azure-data-engineer/Instructions/Labs/09-Load-Data-into-Data-Warehouse.html)
 
+# Outros exemplos
+
+## Descrição
+Inserir uma lista resultante de a combinação de duas tabelas com o comando MINUS. Neste caso, atenção ao alias das colunas (L1_NUMR) e da tabela resultante (S1_STAGING)
+
+```
+INSERT INTO	T_TMP ( NB_PERS ) 
+
+    SELECT
+        DISTINCT S1_STAGING.L1_NUMR
+    FROM
+            ( 
+            SELECT		T_CLNT_ACTV.NB_PERS AS L1_NUMR
+            FROM	SEGM_CLNT_ACTV  T_CLNT_ACTV
+            WHERE	(1=1)
+             
+            MINUS
+            
+            SELECT		SEGM_TT_TMP.NB_PERS AS L1_NUMR
+            FROM	TT_SEGM_CLNT_ACTV  SEGM_TT_TMP
+            WHERE	(1=1)
+             )  S1_STAGING
+
+    WHERE	(1=1)
+
+```
+
+
