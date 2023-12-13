@@ -91,7 +91,7 @@ Take a look in the query pane:
 ## Descrição
 Inserir uma lista resultante de a combinação de duas tabelas com o comando MINUS. Neste caso, atenção ao alias das colunas (L1_NUMR) e da tabela resultante (S1_STAGING)
 
-```
+```sql
 INSERT INTO	T_TMP ( NB_PERS ) 
 
     SELECT
